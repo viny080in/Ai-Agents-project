@@ -1,0 +1,25 @@
+{
+  "incident_type": "High Disk Utilization",
+  "description": "Disk utilization exceeds the configured threshold.",
+  "severity": "HIGH",
+  "recommendations": [
+    {
+      "action": "Identify large files and disk-consuming directories.",
+      "priority": "HIGH",
+      "risk": "LOW",
+      "requires_approval": false
+    },
+    {
+      "action": "Review logs, temporary files, and retention policies.",
+      "priority": "MEDIUM",
+      "risk": "LOW",
+      "requires_approval": false
+    },
+    {
+      "action": "Consider expanding disk capacity after reviewing storage requirements.",
+      "priority": "MEDIUM",
+      "risk": "MEDIUM",
+      "requires_approval": true
+    }
+  ]
+}

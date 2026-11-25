@@ -1,0 +1,25 @@
+{
+  "incident_type": "High Memory Utilization",
+  "description": "Memory utilization exceeds the configured threshold.",
+  "severity": "HIGH",
+  "recommendations": [
+    {
+      "action": "Identify memory-intensive processes.",
+      "priority": "HIGH",
+      "risk": "LOW",
+      "requires_approval": false
+    },
+    {
+      "action": "Review application memory usage and investigate possible memory leaks.",
+      "priority": "HIGH",
+      "risk": "LOW",
+      "requires_approval": false
+    },
+    {
+      "action": "Consider increasing available memory if sustained pressure is confirmed.",
+      "priority": "MEDIUM",
+      "risk": "MEDIUM",
+      "requires_approval": true
+    }
+  ]
+}

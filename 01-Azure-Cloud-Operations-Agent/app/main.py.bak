@@ -1,0 +1,25 @@
+from fastapi import FastAPI
+
+app = FastAPI(
+    title="Azure Cloud Operations Agent",
+    description="Local Azure infrastructure operations and monitoring agent",
+    version="1.0.0",
+)
+
+
+@app.get("/")
+async def root():
+    return {
+        "project": "Azure Cloud Operations Agent",
+        "status": "running",
+        "environment": "local-simulation",
+    }
+
+
+@app.get("/health")
+async def health():
+    return {
+        "status": "healthy",
+        "azure_connection": "not_configured",
+        "mode": "simulation",
+    }

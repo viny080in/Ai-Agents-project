@@ -1,0 +1,25 @@
+{
+  "incident_type": "High CPU Utilization",
+  "description": "CPU utilization exceeds the configured threshold.",
+  "severity": "HIGH",
+  "recommendations": [
+    {
+      "action": "Identify CPU-intensive processes.",
+      "priority": "HIGH",
+      "risk": "LOW",
+      "requires_approval": false
+    },
+    {
+      "action": "Review application workload and resource requirements.",
+      "priority": "MEDIUM",
+      "risk": "LOW",
+      "requires_approval": false
+    },
+    {
+      "action": "Consider scaling the virtual machine if sustained CPU pressure is confirmed.",
+      "priority": "MEDIUM",
+      "risk": "MEDIUM",
+      "requires_approval": true
+    }
+  ]
+}

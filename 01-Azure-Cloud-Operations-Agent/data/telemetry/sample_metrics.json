@@ -1,0 +1,14 @@
+{
+  "resource": "azure-vm-web-01",
+  "resource_type": "Microsoft.Compute/virtualMachines",
+  "environment": "production",
+  "location": "centralindia",
+  "metrics": {
+    "cpu_percent": 92,
+    "memory_percent": 88,
+    "disk_percent": 76,
+    "availability_percent": 99.2,
+    "http_5xx_count": 45
+  },
+  "status": "degraded"
+}

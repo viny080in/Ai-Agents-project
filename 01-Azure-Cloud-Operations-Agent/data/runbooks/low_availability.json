@@ -1,0 +1,25 @@
+{
+  "incident_type": "Low Resource Availability",
+  "description": "Resource availability falls below the configured target.",
+  "severity": "CRITICAL",
+  "recommendations": [
+    {
+      "action": "Inspect service health and application availability logs.",
+      "priority": "HIGH",
+      "risk": "LOW",
+      "requires_approval": false
+    },
+    {
+      "action": "Check virtual machine health and dependent services.",
+      "priority": "HIGH",
+      "risk": "LOW",
+      "requires_approval": false
+    },
+    {
+      "action": "Consider restarting an unhealthy service after confirming the cause.",
+      "priority": "HIGH",
+      "risk": "HIGH",
+      "requires_approval": true
+    }
+  ]
+}

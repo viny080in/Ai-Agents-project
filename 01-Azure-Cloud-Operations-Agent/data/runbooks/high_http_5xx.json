@@ -1,0 +1,25 @@
+{
+  "incident_type": "High HTTP 5xx Errors",
+  "description": "HTTP server errors exceed the configured threshold.",
+  "severity": "HIGH",
+  "recommendations": [
+    {
+      "action": "Inspect application logs for HTTP 5xx exceptions.",
+      "priority": "HIGH",
+      "risk": "LOW",
+      "requires_approval": false
+    },
+    {
+      "action": "Check database connectivity and downstream dependencies.",
+      "priority": "HIGH",
+      "risk": "LOW",
+      "requires_approval": false
+    },
+    {
+      "action": "Consider rolling back a recent deployment if evidence identifies it as the cause.",
+      "priority": "HIGH",
+      "risk": "HIGH",
+      "requires_approval": true
+    }
+  ]
+}
